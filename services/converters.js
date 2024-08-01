@@ -33,7 +33,7 @@ export const degToCompass = (num) => {
 };
 
 /**
- * cette magnifique fonction retourne une chaine de caractère correspondant à l'heure
+ * Cette fonction retourne une chaine de caractère correspondant à l'heure
  * de la date passée en paramètre (sous la forme d'une epoch et d'une timezone)
  *
  * @param   {[type]}  unixSeconds  [unixSeconds description]
@@ -56,9 +56,8 @@ export const unixToLocalTime = (unixSeconds, timezone) => {
  *
  * @return  {[type]}                 [return description]
  */
-export const isoStringToLocalTime = (dateLocalString, timezone) => {
-  //TODO add timezone calculation
-  const date = new Date(dateLocalString + ':00Z')
+export const isoStringToLocalTime = (weatherDataHourly, timezone) => {
+  let date = new Date()
   const hours = date.getHours();
   const minutes = date.getMinutes();
   let formatedMinutes;
