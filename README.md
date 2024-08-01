@@ -14,7 +14,7 @@
 
   3.npm install
 
-  4.Modifier la variable d'environnem .env.local en suivant les instructions du .env.exemple
+  4.Modifier la variable d'environnement .env.local en suivant les instructions du .env.exemple
 
   5.npm run dev
 
